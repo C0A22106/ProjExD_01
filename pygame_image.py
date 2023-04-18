@@ -28,7 +28,7 @@ def main():
         
 
         pg.display.update()
-        clock.tick(500)
+        clock.tick(100)
 
 
 if __name__ == "__main__":
