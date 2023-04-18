@@ -1,5 +1,6 @@
 import pygame as pg
 import sys
+import math
 
 def main():
     pg.display.set_caption("はばたけ！こうかとん")
@@ -21,7 +22,7 @@ def main():
         x = tmr%1600
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img, [1600-x, 0])
-        screen.blit(kk_list[tmr%2], [300, 200])
+        screen.blit(pg.transform.rotate(kk_img,10*math.cos(tmr/10)), [300, 200])
         
 
         pg.display.update()
